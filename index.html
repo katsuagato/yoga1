@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Йога-студия</title>
+
+    <link rel="stylesheet" href="1.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .card {
+            border: 1px solid gray;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .pagination {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Йога-студия</h1>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Поиск занятия..."
+    >
+
+    <h2>Расписание</h2>
+
+    <div id="list">
+
+        <div class="card"
+             data-name="Хатха-йога"
+             data-trainer="Анна"
+             data-time="09:00">
+
+            <h3>Хатха-йога</h3>
+            <p>Тренер: Анна</p>
+            <p>Время: 09:00</p>
+        </div>
+
+        <div class="card"
+             data-name="Виньяса"
+             data-trainer="Мария"
+             data-time="11:00">
+
+            <h3>Виньяса</h3>
+            <p>Тренер: Мария</p>
+            <p>Время: 11:00</p>
+        </div>
+
+        <div class="card"
+             data-name="Йога для начинающих"
+             data-trainer="Елена"
+             data-time="13:00">
+
+            <h3>Йога для начинающих</h3>
+            <p>Тренер: Елена</p>
+            <p>Время: 13:00</p>
+        </div>
+
+        <div class="card"
+             data-name="Аштанга"
+             data-trainer="Дмитрий"
+             data-time="15:00">
+
+            <h3>Аштанга</h3>
+            <p>Тренер: Дмитрий</p>
+            <p>Время: 15:00</p>
+        </div>
+
+    </div>
+
+    <div class="pagination">
+        <button>Назад</button>
+        <button>1</button>
+        <button>2</button>
+        <button>Вперед</button>
+    </div>
+
+</body>
+</html>
