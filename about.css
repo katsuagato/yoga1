@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #333;
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #5a4fcf;
+    margin-bottom: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #555;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #5a4fcf;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.about p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.features li {
+    margin-bottom: 10px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+}
+
+.card,
+.trainer-card,
+.review {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h3,
+.trainer-card h3 {
+    color: #5a4fcf;
+    margin-bottom: 10px;
+}
+
+.review span {
+    display: block;
+    margin-top: 10px;
+    color: #777;
+}
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    z-index: 1000;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.9);
+
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-img {
+    width: 70%;
+    max-width: 800px;
+
+    border-radius: 20px;
+}
+
+#close {
+    position: absolute;
+
+    top: 20px;
+    right: 40px;
+
+    font-size: 50px;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+#review-input {
+    width: 100%;
+    max-width: 400px;
+
+    padding: 12px;
+
+    margin-top: 15px;
+
+    border-radius: 10px;
+
+    border: 1px solid #ccc;
+
+    outline: none;
+}
+
+#add-review {
+    padding: 12px 20px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    background: #5a4fcf;
+
+    color: white;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#add-review:hover {
+    background: #483cb5;
+}
