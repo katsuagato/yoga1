@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f4f6fb;
+
+    color: #333;
+
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+header h1 {
+    color: #5a4fcf;
+
+    font-size: 48px;
+
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+.hero {
+    display: flex;
+
+    gap: 40px;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    margin-bottom: 20px;
+
+    color: #444;
+}
+
+.hero-text p {
+    margin-bottom: 15px;
+
+    line-height: 1.7;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+
+    border-radius: 20px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    transition: 0.4s;
+}
+
+.training-types h2,
+.training-info h2,
+.trainers h2 {
+    margin-bottom: 25px;
+
+    color: #444;
+}
+
+.types-container {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+}
+
+.type-card {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.type-card:hover {
+    transform: translateY(-5px);
+}
+
+.type-card h3 {
+    color: #5a4fcf;
+
+    margin-bottom: 10px;
+}
+
+.training-info {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.trainer-card {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.trainer-card h3 {
+    color: #5a4fcf;
+
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+
+    margin-top: 50px;
+
+    color: #777;
+}
